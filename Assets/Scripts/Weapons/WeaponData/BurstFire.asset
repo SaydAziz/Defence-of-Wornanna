@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ea2c4bb2a9372438412e675b1d0ea7, type: 3}
+  m_Name: BurstFire
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 8955309854670130853, guid: c339fdf7783efa445a490c8f35d5edc8, type: 3}
+  _fireRate: 3
+  _bulletSpeed: 100
+  _burstAmount: 3
+  _isShotgun: 0
+  _soundIndex: 1
