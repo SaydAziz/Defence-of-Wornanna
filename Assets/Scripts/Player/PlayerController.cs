@@ -81,17 +81,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void SelectFourthInv(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            inventory.EquipWeapon(4);
-            weapon.SetData(inventory.equippedWeapon);
-            //SetImageColor(3);
-
-
-        }
-    }
 
     //showing your weapon selection on UI based on what you click
     private void SetImageColor(int imNumb)

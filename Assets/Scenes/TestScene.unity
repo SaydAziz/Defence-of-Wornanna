@@ -1344,17 +1344,6 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &1246198624 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6723407267769166443, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
-  m_PrefabInstance: {fileID: 6723407268303130525}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246198621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2302ea172bb58de4593bb1efebf00614, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1246198627 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6723407267769166446, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
@@ -3949,24 +3938,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
+      propertyPath: m_DefaultActionMap
+      value: Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_ActionId
-      value: e03d8fbb-838b-4dcc-8c7b-d177d563a327
+      value: 8f141e23-ed32-48dd-94db-7823848a85a9
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_ActionId
-      value: a6134467-dd98-400c-8590-a9f0b9fb901a
+      value: ea570471-0408-4074-8a60-fd51c9d365f7
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_ActionId
-      value: 91c41ec9-cfc0-4df7-96d8-1a9808a02227
+      value: e36f645e-2f26-4aaf-8e4e-e0149571aa9f
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_ActionId
-      value: 78a9f3c5-fb33-4d79-90c5-02a2186885a6
+      value: 2c5184c2-0a92-42d3-8455-75f4a5d1886d
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionId
-      value: ca69d643-d4ec-4ecb-831b-3385753cbeeb
+      value: 208eafd6-0cb8-4517-a3a2-79bad2b2bae5
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionId
@@ -3974,23 +3971,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_ActionName
-      value: AerialMovement/Movement[/XInputControllerWindows/leftStick/up,/XInputControllerWindows1/leftStick/up,/XInputControllerWindows/leftStick/down,/XInputControllerWindows1/leftStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows1/leftStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows1/leftStick/right,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+      value: Movement/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_ActionName
-      value: AerialMovement/Shoot[/XInputControllerWindows/buttonSouth,/XInputControllerWindows1/buttonSouth,/Keyboard/space]
+      value: Movement/Shoot[/Keyboard/space]
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_ActionName
-      value: AerialMovement/SelectInv1[/XInputControllerWindows/buttonWest,/XInputControllerWindows1/buttonWest,/Keyboard/1]
+      value: Movement/FirstInv[/Keyboard/1]
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_ActionName
-      value: AerialMovement/SelectInv2[/XInputControllerWindows/buttonNorth,/XInputControllerWindows1/buttonNorth,/Keyboard/2]
+      value: Movement/FirstInv1[/Keyboard/2]
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionName
-      value: AerialMovement/SelectInv3[/XInputControllerWindows/buttonEast,/XInputControllerWindows1/buttonEast,/Keyboard/3]
+      value: Movement/FirstInv2[/Keyboard/3]
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
@@ -4018,7 +4015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4039,7 +4036,7 @@ PrefabInstance:
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1246198624}
+      objectReference: {fileID: 1246198627}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4098,7 +4095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Weapon, Assembly-CSharp
+      value: PlayerController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6723407267769166441, guid: 1e6ecfedc713a8c40a1e5b9f08cd598c, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

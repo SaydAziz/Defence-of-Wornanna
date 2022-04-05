@@ -76,8 +76,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: ba362ee9-01ee-47cc-8ed1-59366dfd86f0
-    m_ActionName: AerialMovement/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+    m_ActionId: 8f141e23-ed32-48dd-94db-7823848a85a9
+    m_ActionName: Movement/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick/up,/XInputControllerWindows/leftStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6723407267769166446}
@@ -92,8 +92,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 07722f8c-4e17-45e2-ba07-83c21d942528
-    m_ActionName: AerialMovement/Shoot[/Keyboard/space]
+    m_ActionId: ea570471-0408-4074-8a60-fd51c9d365f7
+    m_ActionName: Movement/Shoot[/Keyboard/space,/XInputControllerWindows/buttonSouth]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6723407267769166446}
@@ -108,8 +108,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 87fae09b-e257-4385-941f-f9ef6eaf72c3
-    m_ActionName: AerialMovement/SelectInv1[/Keyboard/1]
+    m_ActionId: e36f645e-2f26-4aaf-8e4e-e0149571aa9f
+    m_ActionName: Movement/FirstInv[/Keyboard/1,/XInputControllerWindows/buttonWest]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6723407267769166446}
@@ -124,8 +124,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: d699e706-ae4f-4a2d-a51f-ef0e2e3c7a0c
-    m_ActionName: AerialMovement/SelectInv2[/Keyboard/2]
+    m_ActionId: 2c5184c2-0a92-42d3-8455-75f4a5d1886d
+    m_ActionName: Movement/FirstInv1[/Keyboard/2,/XInputControllerWindows/buttonNorth]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6723407267769166446}
@@ -140,27 +140,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: a79f2ea1-ab33-4a7a-92f0-0e448abdac63
-    m_ActionName: AerialMovement/SelectInv3[/Keyboard/3]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6723407267769166446}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: SelectFourthInv
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 5d0d02b5-4415-47c0-85e1-6c101a709e20
-    m_ActionName: AerialMovement/SelectInv4[/Keyboard/4]
+    m_ActionId: 208eafd6-0cb8-4517-a3a2-79bad2b2bae5
+    m_ActionName: Movement/FirstInv2[/Keyboard/3,/XInputControllerWindows/buttonEast]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: AerialMovement
+  m_DefaultControlScheme: Keyboard
+  m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &6723407267769166446
