@@ -9,14 +9,7 @@ public class Weapon : MonoBehaviour
     
     GameObject bulletPrefab;
     [SerializeField] WeaponData data;
-    private float fireRate, bulletSpeed, burstAmount, lastShot;
-    private bool isShotgun;
-    private int SoundIndex;
-
-    void Awake()
-    {
-        SetData();
-    }
+    private float lastShot;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +25,9 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        if (Time.time > lastShot + fireRate) 
+        if (Time.time > lastShot + data.fireRate * 0.1f) 
         {
-            if (isShotgun)
+            if (data.isShotgun)
             {
                 PelletShoot();
             }
@@ -48,12 +41,12 @@ public class Weapon : MonoBehaviour
     //Instantiates based on for loop with a delay making the bullets comeout one by one
     private IEnumerator Burst()
     {
-        for (int i = 0; i < burstAmount; i++)
+        for (int i = 0; i < data.burstAmount; i++)
             {
-                GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject;
-                bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
+                GameObject bullet = Instantiate(data.bulletPrefab, transform.position, Quaternion.identity) as GameObject;
+                bullet.GetComponent<Rigidbody>().AddForce(transform.forward * data.bulletSpeed, ForceMode.Impulse);
                 lastShot = Time.time;
-                SoundManager.Instance.PlaySound(SoundIndex);
+                SoundManager.Instance.PlaySound(data.SoundIndex);
                 yield return new WaitForSeconds(0.07f);
             }
     }
@@ -61,30 +54,18 @@ public class Weapon : MonoBehaviour
     //no delay so all the bullets will come out at the same time
     private void PelletShoot()
     {
-        for (int i = 0; i < burstAmount; i++)
+        for (int i = 0; i < data.burstAmount; i++)
         {
-            GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x + Random.Range(-1, 2), transform.position.y, transform.position.z + Random.Range(0, 4)), Quaternion.identity) as GameObject;
-            bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
+            GameObject bullet = Instantiate(data.bulletPrefab, new Vector3(transform.position.x + Random.Range(-1, 2), transform.position.y, transform.position.z + Random.Range(0, 4)), Quaternion.identity) as GameObject;
+            bullet.GetComponent<Rigidbody>().AddForce(transform.forward * data.bulletSpeed, ForceMode.Impulse);
             lastShot = Time.time;
-            SoundManager.Instance.PlaySound(SoundIndex);
+            SoundManager.Instance.PlaySound(data.SoundIndex);
         }
     }
 
-
-    //fills in the data int his script with the scriptable object data templates used to create different weapon types
-    private void SetData()
+    public void SetData(WeaponData passedData)
     {
-        bulletPrefab = data.bulletPrefab;
-        fireRate = data.fireRate * 0.1f;
-        bulletSpeed = data.bulletSpeed;
-        burstAmount = data.burstAmount;
-        isShotgun = data.isShotgun;
-        SoundIndex = data.SoundIndex;
-    }
-    public void SetData(WeaponData data)
-    {
-        this.data = data;
-        SetData();
+        this.data = passedData;
     }
 
 }
