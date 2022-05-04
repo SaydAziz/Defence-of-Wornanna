@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+
+    public GameObject tutMenu;
+
     public void StartGame()
     {
         SceneManager.LoadScene("TestScene");
@@ -14,5 +17,21 @@ public class MenuManager : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ToggleTut()
+    {
+        tutMenu.SetActive(true);
+
+    }
+
+    public void Back()
+    {
+        tutMenu.SetActive(false);
     }
 }
